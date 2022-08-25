@@ -1,0 +1,21 @@
+.imageParallax {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: rgb(212, 176, 212);
+  background: linear-gradient(
+    90deg,
+    rgba(212, 176, 212, 1) 0%,
+    rgba(202, 230, 245, 1) 35%,
+    rgba(238, 185, 215, 1) 100%
+  );
+}
+
+.contentParallax {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}

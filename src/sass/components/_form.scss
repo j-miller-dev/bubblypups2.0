@@ -1,0 +1,10 @@
+.form {
+  @include glassmorphism;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.form > * {
+  padding: 4rem;
+}
