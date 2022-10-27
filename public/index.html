@@ -25,13 +25,14 @@
   <body>
     <div class="wrapper">
       <main class="main">
-        <div class="navbar">
+        <div class="navbar" id="navBar">
           <div class="logo">bubblypups</div>
           <div class="nav">
             <a href="#">My work</a>
             <a href="#">services</a>
             <a href="#">contact</a>
             <a href=""><button class="btn nav-btn">book now</button></a>
+          
           </div>
         </div>
         <!-- Hero Section -->
@@ -63,7 +64,6 @@
 
         <!-- Philosophy Section -->
         <section class="philosophy">
-          <h1 class="heading-1">My Philosophy</h1>
           <div class="philosophy__container">
             <div class="card card-1">
               <div class="card__image">
@@ -105,33 +105,35 @@
         </section>
 
         <!-- My Work -->
-        <section class="my-work"></section>
+        <section class="services">
+          <h1 class="heading-1">Services</h1>
+        </section>
         <!-- Services -->
-        <section class="services"></section>
+        <section class="my-work">
+          <h1 class="heading-1">My Work</h1>
+        </section>
       </main>
     </div>
 
     <!-- Contact Me -->
-    <div class="">
-      <section class="">
-        <h2 id="hire" class="heading-1">Hire me</h2>
-        <p class="section-paragraph">
-          Feel free to to contact me any time, through any method below.
-        </p>
-
+      <section class="contact">
+        
         <div class="form">
-          <div class="">
-            <div>
-              <label class="">Name</label>
-              <input class="" />
+          <h2 id="hire" class="heading-1">Hire me</h2>
+          <p class="section-paragraph">
+            Feel free to to contact me any time, through any method below.
+          </p>
+            <div class="inputItem">
+              <input type="text" placeholder="name"/>
             </div>
-            <div>
-              <label class="">Email</label>
-              <input type="email" class="" />
+            <div class="inputItem">
+              <input type="email"  placeholder="email"/>
             </div>
-            <div>
-              <label class="">Message</label>
-              <textarea type="email" class=""></textarea>
+            <div class="inputItem">
+              <input type="tel"  placeholder="mobile" />
+            <div class="inputItem">
+              
+              <textarea type="tex"  placeholder="please leave a message"></textarea>
             </div>
             <button class="">Send it!</button>
           </div>
@@ -166,21 +168,54 @@
         </div>
       </section>
     </div>
-  </body>
-  <footer class="footer">
-    <div class="sticky">
-      <div class="bubbles">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
+    <footer class="footer">
+      <div class="sticky">
+        <div class="bubbles">
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </body>
+  <script>
+    // Toggle the .pa-fixed-header class when the user
+// scroll 100px
+
+window.onscroll = () => {
+  scrollNavbar();
+};
+
+scrollNavbar = () => {
+  // Target elements
+  const navBar = document.getElementById("navBar");
+  const links = document.querySelectorAll("#navBar a");
+
+  if (document.documentElement.scrollTop > 100) {
+    navBar.classList.add("pa-fixed-header");
+    console.log("Navigation change initiated");
+
+    // Change the color of links on scroll
+    for (let i = 0; i < links.length; i++) {
+      const element = links[i];
+      element.classList.add("text-black");
+    }
+  } else {
+    navBar.classList.remove("pa-fixed-header");
+
+    // Change the color of links back to default
+    for (let i = 0; i < links.length; i++) {
+      const element = links[i];
+      element.classList.remove("text-black");
+    }
+  }
+};
+  </script>
 </html>

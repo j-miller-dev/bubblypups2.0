@@ -36,16 +36,39 @@
     padding-left: 2rem;
   }
 
+  & > a:hover {
+    color: $light-purple;
+    transition: 0.5s ease-in-out;
+  }
+
   & > * {
     padding-right: 2rem;
     white-space: nowrap;
   }
   & .btn {
     @include glassmorphism-navbar__btn;
-
-    font-weight: 800;
+    cursor: pointer;
+    font-weight: 500;
     color: $white;
   }
+
+  & .btn:hover {
+    background: $light-blue;
+    transition: 0.5s ease-in-out;
+    color: $black;
+  }
+}
+
+.pa-fixed-header {
+  @include glassmorphism-navbar;
+  -webkit-transition: background-color 1s ease-in-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-in-out;
+}
+
+.text-black {
+  color: #000000;
 }
 
 // /* Position and sizing of burger button */
