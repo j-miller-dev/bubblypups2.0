@@ -20,3 +20,27 @@
 .card-3 {
   background: $light-purple;
 }
+
+// Service Cards
+.service {
+  @include glassmorphism-service-card();
+  max-width: 400px;
+  height: 200px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &__image img {
+    max-width: 80px;
+  }
+}

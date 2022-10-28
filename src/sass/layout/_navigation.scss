@@ -67,8 +67,10 @@
   transition: background-color 1s ease-in-out;
 }
 
-.text-black {
-  color: #000000;
+.pa-fixed-logo {
+  color: var($light-pink) !important;
+  transition: color 200ms ease-in-out;
+  z-index: 1;
 }
 
 // /* Position and sizing of burger button */
