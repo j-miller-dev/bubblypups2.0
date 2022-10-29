@@ -10,11 +10,14 @@
 @import "base/reset";
 @import "base/typography";
 
+@import "components/booking";
 @import "components/buttons";
 @import "components/cards";
 @import "components/accordion";
 @import "components/form";
 @import "components/parallax";
+@import "components/gallery";
+@import "components/lightbox";
 
 @import "pages/home";
 @import "pages/enter";

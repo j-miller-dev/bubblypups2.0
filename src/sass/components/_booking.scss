@@ -1,0 +1,34 @@
+.hero-book {
+  background-image: url(public/images/cheeky-dog.jpeg);
+
+  .bubble {
+    background-color: $light-pink;
+  }
+}
+.booking-app {
+  z-index: 2000;
+  @include glassmorphism;
+}
+
+@include devices(tablet) {
+  .booking-app {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    z-index: 2000;
+  }
+}
+
+.hero-book {
+  height: 100vh;
+  width: 100vw;
+  padding: 5rem;
+  background: linear-gradient(#f6f6f6, #fefefe);
+}

@@ -31,7 +31,7 @@
             <a href="#">My work</a>
             <a href="#">services</a>
             <a href="#">contact</a>
-            <a href=""><button class="btn nav-btn">book now</button></a>
+            <a href="book.html"><button  class="btn nav-btn">book now</button></a>
           
           </div>
         </div>
@@ -70,10 +70,9 @@
                 <img src="./images/dog (1).png" alt="" />
               </div>
               <div class="card__content">
-                <h2 class="heading-2">A life-long passion for</h2>
+                <h2 class="heading-2">A life-long passion for dogs</h2>
                 <p class="card__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, quisquam.
+                  Dogs have been a part of my life since the day I was born.
                 </p>
               </div>
             </div>
@@ -84,8 +83,7 @@
               <div class="card__content">
                 <h2 class="heading-2">5+ years' grooming experience</h2>
                 <p class="card__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, quisquam.
+                  With proven industry experience, you're in the right hands!
                 </p>
               </div>
             </div>
@@ -96,8 +94,7 @@
               <div class="card__content">
                 <h2 class="heading-2">All doggies and all breeds!</h2>
                 <p class="card__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, quisquam.
+                  No matter the size or the breed, I've got you covered!
                 </p>
               </div>
             </div>
@@ -164,33 +161,60 @@
         <!-- Services -->
         <section class="my-work">
           <h1 class="heading-1">My Work</h1>
-          // Gallery
+          <div class="gallery">
+            <div class="gallery__item gallery__item--1">
+              <img src="./images/dog-gallery/Luna.jpeg" alt="" />
+            </div>
+            <div class="gallery__item gallery__item--2">
+              <img src="./images/dog-gallery/LunaBear.jpeg" alt="" />
+            </div>
+            <div class="gallery__item gallery__item--3">
+              <img src="./images/dog-gallery/Maggie.jpeg" alt="" />
+            </div>
+            <div class="gallery__item gallery__item--4">
+              <img src="./images/dog-gallery/Maisey.jpeg" alt="" />
+            </div>
+            <div class="gallery__item gallery__item--5">
+              <img src="./images/dog-gallery/Oskar.jpeg" alt="" />
+            </div>
+            <div class="gallery__item gallery__item--6">
+              <img src="./images/dog-gallery/Winnie.jpeg" alt="" />
+            </div>
+            
+            
+          </div>
         </section>
       </main>
     </div>
 
+    
+
     <!-- Contact Me -->
       <section class="contact">
+        
         
         <div class="form">
           <h2 id="hire" class="heading-1">Hire me</h2>
           <p class="section-paragraph">
             Feel free to to contact me any time, through any method below.
           </p>
+          <form method="POST" action="form.php" id="contact-form">
+
             <div class="inputItem">
-              <input type="text" placeholder="name"/>
+              <input type="text" name="name" placeholder="name"/>
             </div>
             <div class="inputItem">
-              <input type="email"  placeholder="email"/>
+              <input type="email" name="email" placeholder="email"/>
             </div>
             <div class="inputItem">
-              <input type="tel"  placeholder="mobile" />
+              <input type="tel"  name="number" placeholder="mobile" />
             <div class="inputItem">
               
-              <textarea type="tex"  placeholder="please leave a message"></textarea>
+              <textarea type="text" name="message" placeholder="please leave a message"></textarea>
             </div>
-            <button class="btn">Send it!</button>
+            <button type="submit" value="send" class="btn">Send it!</button>
           </div>
+          </form>
 
           <div class="">
             <!-- Contact info -->
@@ -275,4 +299,12 @@ scrollNavbar = () => {
   }
 };
   </script>
+
+  <script>
+
+
+  </script>
+   
+   
+
 </html>
