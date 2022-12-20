@@ -1,22 +1,44 @@
 .hero {
   height: 100vh;
   width: 100vw;
-  padding: 5rem;
-  background: linear-gradient($light-pink, #fefefe);
+  background: linear-gradient(#fefefe, #fefefe);
 }
 
 .hero__container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-  width: 100%;
-  padding: 2rem;
+  background: rgba(255, 255, 255, 0.056);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 0px;
+  border: 0px solid rgba(255, 255, 255, 0.18);
+  height: 100vh;
+  width: 100vw;
+  padding: 0rem;
 }
 
-.hero__container h1 {
-  max-width: 800px;
+.hero__container img {
+  display: inline;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+
+.logo img {
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__logo {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .philosophy {
@@ -108,7 +130,7 @@
 .contact {
   height: 100vh;
   width: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
