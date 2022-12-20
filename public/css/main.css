@@ -4,7 +4,7 @@
   position: fixed;
   height: auto;
   background: transparent;
-  display: none;
+  display: flex;
   flex-direction: row;
   margin-top: 1rem;
   margin-left: 1rem;
@@ -216,8 +216,12 @@ body {
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  letter-spacing: -0.5;
-  color: #fff;
+  letter-spacing: -0.2;
+  color: #000;
+}
+
+.card__paragraph {
+  line-height: 1.3rem;
 }
 
 .hero-book {
@@ -279,30 +283,40 @@ body {
 }
 
 .card {
-  background: #cae6f5;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(18px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  max-width: 300px;
+  width: 300px;
   padding: 2rem;
+  height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
   text-align: center;
+  border: 2px solid #cae6f5;
+}
+.card__image {
+  max-width: 200px;
+  padding-bottom: 2rem;
 }
 .card__image img {
-  max-width: 200px;
+  max-width: 100px;
+  border-radius: 50%;
+  background-color: #cae6f5;
+}
+.card__content .heading-2 {
+  padding-bottom: 0.5rem;
 }
 
 .card-2 {
-  background: #ebb9d7;
+  border: 2px solid #ebb9d7;
+}
+.card-2 .card__image img {
+  background-color: #ebb9d7;
 }
 
 .card-3 {
-  background: #d4b0d4;
+  border: 2px solid #d4b0d4;
+}
+.card-3 .card__image img {
+  background-color: #d4b0d4;
 }
 
 .service {
@@ -498,24 +512,22 @@ textarea {
 }
 
 .hero {
+  background-image: url(../../assets/images/BPBackgroundHero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(#fefefe, #fefefe);
+  background-position-y: -20px;
 }
 
 .hero__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.056);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 0px;
-  border: 0px solid rgba(255, 255, 255, 0.18);
-  height: 100vh;
-  width: 100vw;
-  padding: 0rem;
+  height: 100%;
+  width: 100%;
 }
 
 .hero__container img {
@@ -527,17 +539,22 @@ textarea {
   border-radius: 1rem;
 }
 
-.logo img {
-  width: 400px;
+.slideshow {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1000;
+  position: absolute;
+  background-image: url(../../assets/images/cheeky-dog.jpeg);
+  opacity: 0.5;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position-y: -200px;
 }
 
-.hero__logo {
-  z-index: 1000;
-  width: 100%;
-  height: 100%;
-  display: flex;
+.about {
+  height: 80vh;
+  width: 100vw;
+  background-color: #ebb9d7;
 }
 
 .philosophy {
@@ -551,36 +568,28 @@ textarea {
 .philosophy__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 60%;
-  max-width: 1200px;
-  padding: 5rem;
+  max-width: 1000px;
+  padding: 2rem;
 }
 .philosophy__container .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 2rem;
+  margin: 1.2rem;
+  border-radius: 3rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: 0.5s ease-in-out;
-}
-.philosophy__container .card:hover {
-  transform: scale(1.1);
-}
-.philosophy__container .card .card__icon {
-  font-size: 3rem;
-  color: #d4b0d4;
 }
 .philosophy__container .card .card__title {
   font-size: 1.5rem;
-  font-weight: 600;
-  color: #d4b0d4;
+  font-weight: 400;
 }
 .philosophy__container .card .card__description {
   font-size: 1rem;
-  color: #d4b0d4;
+  letter-spacing: 1rem;
 }
 
 .my-work {

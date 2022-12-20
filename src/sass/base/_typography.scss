@@ -24,6 +24,10 @@ body {
   font-weight: $weight-extraBold;
   font-size: 1.5rem; // 64px
   line-height: 1.5rem; // 72px
-  letter-spacing: -0.5;
-  color: $white;
+  letter-spacing: -0.2;
+  color: $black;
+}
+
+.card__paragraph {
+  line-height: 1.3rem;
 }
